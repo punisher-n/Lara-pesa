@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
         "laravel/framework": "^7.29",
         "laravel/tinker": "^2.5",
-        "openpesa/pesa": "^0.0.5"
+        "openpesa/laravel-pesa": "^0.0.3"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

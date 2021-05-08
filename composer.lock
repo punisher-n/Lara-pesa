@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86466120525147374da13dc97658c921",
+    "content-hash": "614391688dcec2cbd9f0029f6bbb801f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1521,8 +1521,74 @@
             "time": "2021-05-03T19:11:20+00:00"
         },
         {
+            "name": "openpesa/laravel-pesa",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openpesa/laravel-pesa.git",
+                "reference": "b0cde9507d57277cdb2ee8cc87be5485029e5f2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openpesa/laravel-pesa/zipball/b0cde9507d57277cdb2ee8cc87be5485029e5f2a",
+                "reference": "b0cde9507d57277cdb2ee8cc87be5485029e5f2a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0",
+                "openpesa/pesa": "dev-main",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Openpesa\\Pesa\\PesaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Pesa": "Openpesa\\Pesa\\PesaFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Openpesa\\Pesa\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alpha Olomi",
+                    "email": "alphaolomi@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Leylow Lujuo",
+                    "email": "leyluj21@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easy OpenAPI integration for Laravel Apps",
+            "homepage": "https://github.com/openpesa/laravel-pesa",
+            "support": {
+                "issues": "https://github.com/openpesa/laravel-pesa/issues",
+                "source": "https://github.com/openpesa/laravel-pesa"
+            },
+            "time": "2021-05-03T18:05:52+00:00"
+        },
+        {
             "name": "openpesa/pesa",
-            "version": "v0.0.5",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openpesa/php-pesa.git",
@@ -1544,6 +1610,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^7.0|^9.5"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {

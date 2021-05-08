@@ -30,4 +30,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+
+    'pesa' => [
+        'public_key' => env('PESA_PUBLIC_KEY'),
+        'api_key' => env('PESA_API_KEY'),
+        'env' => env('PESA_ENV'),
+    ]
+
+
 ];

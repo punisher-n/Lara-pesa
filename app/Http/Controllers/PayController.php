@@ -21,7 +21,7 @@ class PayController extends Controller
             'input_PurchasedItemsDesc' => 'Test Transaction'
         ];
         $res = PesaFacade::c2b($data_c2b);
-        dd($res);
+        // dd($res);
         return $res;
     }
 }
